@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: semillabitcoin-broadcast-pool
+category: bitcoin
+name: Broadcast Pool
+version: "0.2.0"
+tagline: Schedule Bitcoin transaction broadcasts
+description: >-
+  Electrum proxy that intercepts signed transactions from Sparrow, Liana or
+  manual import, retains them, and broadcasts at the target block or date
+  you configure. Ideal for wallet migrations and UTXO cycling with temporal
+  separation.
+
+  Compatible with Electrs and Fulcrum. Supports mainnet, testnet and signet.
+  NIP-44 encrypted vault (Nostr) for confirmed transaction history.
+
+  Inspired by Craig Raw's Broadcast Pool proposal (bitcoin/bitcoin#30471).
+releaseNotes: >-
+  v0.2.0 — First public release under Semilla Bitcoin
+developer: Semilla Bitcoin
+website: https://semillabitcoin.com
+dependencies:
+  - electrs
+repo: https://github.com/semillabitcoin/broadcast-pool
+support: https://github.com/semillabitcoin/broadcast-pool/issues
+icon: https://raw.githubusercontent.com/semillabitcoin/umbrel-app-store/main/semillabitcoin-broadcast-pool/icon.png
+port: 3080
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Semilla Bitcoin
+submission: https://github.com/semillabitcoin/umbrel-app-store
