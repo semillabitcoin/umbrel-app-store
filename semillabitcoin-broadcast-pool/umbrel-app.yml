@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-broadcast-pool
 category: bitcoin
 name: Broadcast Pool
-version: "0.2.2"
+version: "0.2.3"
 tagline: Schedule Bitcoin transaction broadcasts
 description: >-
   Electrum proxy that intercepts signed transactions from Sparrow, Liana or
@@ -15,7 +15,7 @@ description: >-
 
   Inspired by Craig Raw's Broadcast Pool proposal (bitcoin/bitcoin#30471).
 releaseNotes: >-
-  v0.2.2 — Settings tab redesign, wallet connection info, clickable server cards, inline saves
+  v0.2.3 — Web UI port changed from 3080 to 4040 (fix conflict with Copexit/openresty-manager)
 developer: Semilla Bitcoin
 website: https://semillabitcoin.com
 dependencies:
@@ -23,7 +23,7 @@ dependencies:
 repo: https://github.com/semillabitcoin/broadcast-pool
 support: https://github.com/semillabitcoin/broadcast-pool/issues
 icon: https://raw.githubusercontent.com/semillabitcoin/umbrel-app-store/main/semillabitcoin-broadcast-pool/icon.png
-port: 3080
+port: 4040
 gallery: []
 path: ""
 defaultUsername: ""
