@@ -7,7 +7,7 @@ services:
       APP_PORT: ${APP_SEMILLABITCOIN_BROADCAST_POOL_PORT}
 
   app:
-    image: ghcr.io/semillabitcoin/broadcast-pool:v0.3.11@sha256:2831f2fbf865ba20a5421ae83d6bf39320a01c6df796ca6e2edd121108b40e9c
+    image: ghcr.io/semillabitcoin/broadcast-pool:v0.3.12@sha256:a06a3178f38ac1ed7831de7a0e9f5240b113f91cb09b1761801f1524a091f201
     init: true
     restart: on-failure
     stop_grace_period: 1m

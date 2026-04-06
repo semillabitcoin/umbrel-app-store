@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-broadcast-pool
 category: bitcoin
 name: Broadcast Pool
-version: "0.3.11"
+version: "0.3.12"
 tagline: Schedule Bitcoin transaction broadcasts
 description: >-
   Electrum proxy that intercepts signed transactions from Sparrow, Liana or
@@ -15,7 +15,7 @@ description: >-
 
   Inspired by Craig Raw's Broadcast Pool proposal (bitcoin/bitcoin#30471).
 releaseNotes: >-
-  v0.3.11 — Faking blockheight PoC for Liana (experimental): sign txs with future nLockTime
+  v0.3.12 — Status bar distributes evenly across width
 developer: Semilla Bitcoin
 website: https://semillabitcoin.com
 dependencies:
