@@ -44,7 +44,7 @@ dependencies: []
 repo: https://github.com/semillabitcoin/descriptor-cifrado
 support: https://github.com/semillabitcoin/descriptor-cifrado/issues
 icon: https://raw.githubusercontent.com/semillabitcoin/umbrel-app-store/main/semillabitcoin-bed/icon.png
-port: 4180
+port: 4380
 gallery: []
 path: ""
 defaultUsername: ""
