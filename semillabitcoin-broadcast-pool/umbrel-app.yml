@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-broadcast-pool
 category: bitcoin
 name: Broadcast Pool
-version: "0.3.15"
+version: "0.3.16"
 tagline: Schedule Bitcoin transaction broadcasts
 description: >-
   Electrum proxy that intercepts signed transactions from Sparrow, Liana or
@@ -15,8 +15,9 @@ description: >-
 
   Inspired by Craig Raw's Broadcast Pool proposal (bitcoin/bitcoin#30471).
 releaseNotes: >-
-  v0.3.15 — Fix: price display no longer overlaps the "How it works" tab
-  when price tracking is active. Moved to the top-right header.
+  v0.3.16 — Refreshed app icon. Connect banner now shows a "connect to Electrum
+  server to continue" prompt until the upstream is detected; once connected,
+  it displays the wallet endpoint. Singular wording ("Conecta tu wallet").
 developer: Semilla Bitcoin
 website: https://semillabitcoin.com
 dependencies:
