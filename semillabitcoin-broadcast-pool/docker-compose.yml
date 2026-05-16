@@ -7,7 +7,7 @@ services:
       APP_PORT: ${APP_SEMILLABITCOIN_BROADCAST_POOL_PORT}
 
   app:
-    image: ghcr.io/semillabitcoin/broadcast-pool:v0.3.16@sha256:cd7f691557f9a19484b9577ef058e814faf55be764e29db232234feb6e4f0e63
+    image: ghcr.io/semillabitcoin/broadcast-pool:v0.3.17@sha256:34d0beba0448c786ab130f2edc6a145cd6d549e47968b74c7c96ce08096c99ae
     init: true
     restart: on-failure
     stop_grace_period: 1m
@@ -25,6 +25,9 @@ services:
       APP_SEED: ${APP_SEED}
       APP_PASSWORD: ${APP_PASSWORD}
       APP_HIDDEN_SERVICE: ${APP_HIDDEN_SERVICE}
+    # Reach other Umbrel apps (e.g. the price oracle) via their host-published ports.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     networks:
       default:
         ipv4_address: ${APP_SEMILLABITCOIN_BROADCAST_POOL_IP}

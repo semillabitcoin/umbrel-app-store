@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-broadcast-pool
 category: bitcoin
 name: Broadcast Pool
-version: "0.3.16"
+version: "0.3.17"
 tagline: Schedule Bitcoin transaction broadcasts
 description: >-
   Electrum proxy that intercepts signed transactions from Sparrow, Liana or
@@ -15,9 +15,10 @@ description: >-
 
   Inspired by Craig Raw's Broadcast Pool proposal (bitcoin/bitcoin#30471).
 releaseNotes: >-
-  v0.3.16 — Refreshed app icon. Connect banner now shows a "connect to Electrum
-  server to continue" prompt until the upstream is detected; once connected,
-  it displays the wallet endpoint. Singular wording ("Conecta tu wallet").
+  v0.3.17 — Fix: El Oráculo (local price oracle) is now auto-detected on
+  Umbrel. BP probes both port 7777 (upcoming oracle release) and 3200
+  (legacy) over host.docker.internal, so BP and the oracle can reach each
+  other across their separate per-app Docker networks.
 developer: Semilla Bitcoin
 website: https://semillabitcoin.com
 dependencies:
