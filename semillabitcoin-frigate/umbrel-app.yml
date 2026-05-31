@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-frigate
 category: bitcoin
 name: Frigate
-version: "1.5.2-5"
+version: "1.5.3-1"
 tagline: Silent Payments Electrum server for Sparrow Wallet
 description: >-
   Frigate is an experimental Electrum-style server that enables Silent Payments
