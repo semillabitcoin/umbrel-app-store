@@ -2,7 +2,7 @@ manifestVersion: 1
 id: semillabitcoin-frigate
 category: bitcoin
 name: Frigate
-version: "1.5.3-1"
+version: "1.6.1-1"
 tagline: Silent Payments Electrum server for Sparrow Wallet
 description: >-
   Frigate is an experimental Electrum-style server that enables Silent Payments
@@ -19,12 +19,17 @@ description: >-
   installed and synced. Initial indexing can take hours on mainnet (CPU-only)
   but is fast on signet/testnet.
 releaseNotes: >-
-  Bump Frigate to upstream 1.5.3. Adds a privacy-preserving hourly
-  aggregate of historical scan stats, provides a local server.features
-  fallback when the backend returns method-not-found, improves the
-  hosts field in server.features, and fixes a three-way DuckDB
-  deadlock that could occur when interrupting a historical scan on
-  exit.
+  Bump Frigate to upstream 1.6.1. 1.6.0 adds a [limits] config section
+  to protect public servers (connection caps, session timeout, request
+  and batch bounds, subscription limits, subscribe pacing), a
+  per-session backend supervisor that reconnects with backoff and
+  restores subscriptions with catch-up, TLS backend authentication and
+  hot TLS certificate reload, graceful shutdown with drain, and a
+  loopback admin endpoint. Upgrades DuckDB to v1.5.5 with the ufsecp
+  v4.6.2 extension and OpenCL binary caching. Fixes mempool update
+  failures when a spent transaction has left the mempool and a CPU
+  historical scan issue after restart. 1.6.1 fixes a shutdown deadlock
+  by stopping bitcoind polling before closing indexes.
 icon: https://raw.githubusercontent.com/semillabitcoin/umbrel-app-store/main/semillabitcoin-frigate/icon.png
 developer: sparrowwallet
 website: https://github.com/sparrowwallet/frigate
